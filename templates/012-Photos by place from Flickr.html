@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pictures from {{ place }}</title>
+</head>
+<body>
+    <h2>Pictures from {{ place.capitalize() }}</h1>
+    
+    {% for url in photo_url_list %}
+        <img src= {{ url }} width="600">
+        <br>
+    {% endfor %}
+
+</body>
+</html>
